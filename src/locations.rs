@@ -13,9 +13,15 @@ pub trait Location: Entity {
     }
 }
 
-struct BasicLocation {
+pub struct BasicLocation {
     name: String,
     description: String,
+}
+
+impl BasicLocation {
+    pub fn new(name: String, description: String) -> BasicLocation {
+        BasicLocation { name, description }
+    }
 }
 
 impl Display for BasicLocation {
