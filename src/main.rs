@@ -1,3 +1,4 @@
+mod locations;
 mod traits;
 
 fn main() {
